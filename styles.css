@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+body {
+  background-color: #1f1f1f;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: "Dancing Script";
+}
+
+h1 {
+  color: #ffeedb;
+  text-align: center;
+  font-size: 8.5em;
+  text-shadow: 1px 1px 2px black;
+  font-weight: 400;
+  margin-bottom: 0 2px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 75px;
+  color: #b3b3f1;
+  font-weight: 100;
+  margin: 15px 0px;
+}
+
+p {
+  color: #fffff2;
+  font-family: Roboto, Lato, sans-serif;
+}
+
+.hp {
+  width: 100%;
+  height: 100vh;
+  background-image: url(http://unsplash.it/1920?gravity=center);
+}
+
+/*.hp-background {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}*/
+
+.heroline_text {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#heroline {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0;
+  font-size: 34px;
+  text-shadow: 1px 1px 2px black;
+}
+.main-content {
+  margin: 15px 15px;
+}
+
+.who-we-are {
+  display: flex;
+}
+
+.divider-style-left {
+ margin-right: 9px;
+}
+
+.wwa-text {
+  float: left;
+  margin-left: 15px;
+  width: 50%;
+}
+
+.wwa-imagecontainer {
+  display: flex;
+  width: 50%;
+  /* padding: 10px 100px; */
+  /* margin: 5px 5px; */
+  justify-content: center;
+}
+
+.wwa-img {
+  float: right;
+  width: 50%;
+}
