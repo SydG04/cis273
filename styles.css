@@ -13,7 +13,7 @@ h2 {
 h1 {
   color: #ffeedb;
   text-align: center;
-  font-size: 8.5em;
+  font-size: 9.5em;
   text-shadow: 1px 1px 2px black;
   font-weight: 400;
   margin-bottom: 0 2px;
@@ -21,7 +21,7 @@ h1 {
 }
 
 h2 {
-  font-size: 75px;
+  font-size: 70px;
   color: #b3b3f1;
   font-weight: 100;
   margin: 15px 0px;
@@ -32,23 +32,90 @@ p {
   font-family: Roboto, Lato, sans-serif;
 }
 
-.hp {
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100vh;
-  background-image: url(http://unsplash.it/1920?gravity=center);
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+  display: flex;
+  justify-content: space-between; /* Logo to the left, links to the right */
+  align-items: center;
+  z-index: 2; /* Place the navbar above the video */
 }
 
-/*.hp-background {
+.logo {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.logo p {
+  margin-right: 20px; /* Add space between the logo and links */
+  font-family: "Dancing Script";
+  color: #ffeedb;
+  font-size: 25px;
+}
+
+#navlist {
+  list-style: none;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+#navlist li {
+  display: inline-block;
+  margin-left: 15px; /* Add space between the links */
+  color: white;
+  padding: 10px 10px;
+  font-family: Roboto, Lato, sans-serif;
+  font-size: large;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #61c9a8;
+  cursor: pointer;
+}
+
+.donate-btn {
+  border: none;
+  color: white;
+  background-color: #a53860;
+  border-radius: 30px;
+  padding: 10px 15px;
+  font-size: large;
+}
+
+.donate-btn:hover {
+  background-color: #61c9a8;
+  padding: 10px 15px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.hp {
+  position: relative;
   height: 100vh;
-  width: 100%;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
+}
+
+.video_wrapper {
+  position: absolute;
   top: 0;
-  bottom: 0;
-  z-index: -1;
-}*/
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hp-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This ensures the video covers the container */
+}
 
 .heroline_text {
   width: inherit;
@@ -58,26 +125,42 @@ p {
   align-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+  z-index: 1; /* Bring the text content above the video */
 }
 
-#heroline {
+.heroline_text p {
   color: white;
   text-align: center;
-  font-size: 50px;
   margin-top: 0;
-  font-size: 34px;
+  font-size: 35px;
   text-shadow: 1px 1px 2px black;
 }
+
 .main-content {
   margin: 15px 15px;
 }
 
 .who-we-are {
   display: flex;
+  height: 100vh;
+}
+
+/*
+.divider-style-container {
+ 
 }
 
 .divider-style-left {
- margin-right: 9px;
+
+}
+
+.divider-style-left-top {
+  
+} */
+
+.leftalign-text {
+  font-size: 25px;
 }
 
 .wwa-text {
@@ -92,9 +175,50 @@ p {
   /* padding: 10px 100px; */
   /* margin: 5px 5px; */
   justify-content: center;
+  align-items: center;
 }
 
 .wwa-img {
   float: right;
+  width: 70%;
+  height: 70%;
+}
+
+.who-we-are,
+.why-the-arts {
+  margin-top: 5px;
+}
+
+.why-the-arts {
+  display: flex;
+  height: 100vh;
+}
+
+.wta-text {
+  float: right;
   width: 50%;
+  text-align: right;
+}
+
+.rightaligned-text {
+  font-size: 25px;
+}
+
+.wta-img {
+  float: left;
+  width: 70%;
+  height: 70%;
+}
+
+.wta-imagecontainer {
+  display: flex;
+  width: 50%;
+  /* padding: 10px 100px; */
+  /* margin: 5px 5px; */
+  justify-content: center;
+  align-items: center;
+}
+
+strong {
+  font-size: 30px;
 }
