@@ -49,12 +49,19 @@ p {
   padding: 10px 20px;
 }
 
+/*.logo video {
+  height: 200px; 
+  width: 200px;
+}
+*/
+
 .logo p {
-  margin-right: 20px; /* Add space between the logo and links */
+  margin-right: 20px; /* Add space between the logo and links*/
   font-family: "Dancing Script";
   color: #ffeedb;
   font-size: 25px;
 }
+
 
 #navlist {
   list-style: none;
@@ -220,6 +227,101 @@ a:hover {
   align-items: center;
 }
 
-strong {
+strong, em {
   font-size: 30px;
+  font-weight: bold;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid white;
+}
+
+.separator:not(:empty)::before {
+  margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: .25em;
+}
+
+.how-you-can-help p {
+  font-size: 25px;
+  text-align: center;
+}
+
+/*
+@media screen and (max-width: 700px) {
+  .who-we-are {
+    display: flex;
+    height: 50vh;
+    flex-direction: column-reverse;
+  }
+
+  .leftalign-text {
+    font-size: 15px;
+  }
+  
+  .wwa-text {
+    margin-left: 15px;
+    width: 50%;
+  }
+  
+  .wwa-imagecontainer {
+    display: flex;
+    width: 50%;
+    /* padding: 10px 100px; */
+    /* margin: 5px 5px; 
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wwa-img {
+    float: right;
+    width: 70%;
+    height: 70%;
+  }
+  
+}
+*/
+
+.donation_container {
+  width: 50%;
+  justify-content: center;
+}
+
+.donation_form {
+  margin: 0px 8px 0 30px;
+  outline: 2px #61c9a8 solid;
+  width: 350px;
+  height: 500px;
+  border-radius: 30px;
+  float: left;
+}
+
+.donation_form em {
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  color: white;
+  font-size: 25px;
+  padding-top: 20px;
+}
+
+.donation_text {
+  float: right;
+  width: 50%
+}
+
+
+.donation_text strong {
+  
 }
