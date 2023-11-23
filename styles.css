@@ -32,9 +32,23 @@ h2 {
   margin: 15px 0px;
 }
 
-p, figcaption {
+h3 {
+  font-size: 25px;
+}
+
+h3, p, figcaption {
   color: #fffff2;
   font-family: Roboto, Lato, sans-serif;
+}
+
+input {
+  font-size: 15px;
+}
+
+input::placeholder {
+  font-family: Roboto, Lato, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .navbar {
@@ -111,12 +125,14 @@ a:hover {
   cursor: pointer;
 }
 
-.hp, .our-foundation-bg {
+.hp, 
+.our-foundation-bg {
   position: relative;
   height: 100vh;
 }
 
-.video_wrapper, .ourTeam-container {
+.video_wrapper,
+ .ourTeam-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -131,7 +147,8 @@ a:hover {
   object-fit: cover; /* This ensures the video covers the container */
 }
 
-.heroline_text, .our-foundation-heading {
+.heroline_text, 
+.our-foundation-heading {
   width: inherit;
   height: inherit;
   display: flex;
@@ -194,7 +211,8 @@ a:hover {
 }
 
 
-.ra-imagecontainer, .la-imgcontainer {
+.ra-imagecontainer, 
+.la-imgcontainer {
   display: flex;
   width: 50%;
   /* padding: 10px 100px; */
@@ -248,40 +266,25 @@ strong, em {
 
 /*
 @media screen and (max-width: 700px) {
-  .who-we-are {
+  
+  #who-we-are, 
+  #why-the-arts {
     display: flex;
-    height: 50vh;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
-
-  .leftalign-text {
-    font-size: 15px;
+  .main-content {
+    margin: 5px;
   }
-  
-  .wwa-text {
-    margin-left: 15px;
-    width: 50%;
-  }
-  
-  .wwa-imagecontainer {
-    display: flex;
-    width: 50%;
-    /* padding: 10px 100px; */
-    /* margin: 5px 5px; 
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .wwa-img {
-    float: right;
-    width: 70%;
-    height: 70%;
-  }
-  
 }
 */
 
+#donation {
+    display: flex;
+    align-items: center;
+}
+
 .donation_container {
+  display: flex;
   width: 50%;
   justify-content: center;
 }
@@ -306,12 +309,14 @@ strong, em {
 
 .donation_text {
   float: right;
-  width: 50%
+  width: 50%;
+  font-size: 30px;
+  margin-right: 15px;
 }
 
 
 .donation_text strong {
-  color: #a53860;
+  color: #d48282;
 }
 
 
@@ -323,7 +328,8 @@ strong, em {
 /*Our Foundation page*/
 
 .our-foundation-heading h1 {
-  color: #61c9a8 ;
+  color: #61c9a8;
+  
 }
 
 #our-origin-story, 
@@ -362,4 +368,103 @@ strong, em {
   font-size: 20px;
   line-height: 1.5;
   list-style-type: " ★ ";
+}
+
+
+
+/*Footer*/
+footer {
+  display: flex;
+  height: 300px;
+  width: 100%;
+  background-color: #006151;
+  padding: 20px 10px 10px;
+}
+
+.newsletter-container {
+  width: 50%;
+  padding: 0 30px;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-form input[type=text],
+.newsletter-form input[type=email]{
+  width: 75%;
+  margin-bottom: 12px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid #2bffbc;
+  background: #FFF;
+}
+
+.newsletter-btn {
+  border: none;
+  width: 75%;
+  height: 40px;
+  font-size: 20px;
+  background-color: #a53860;
+  color: #fffff2;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.newsletter-btn:hover {
+  cursor: pointer;
+  background-color: #61c9a8;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.followus-container {
+  width: auto;
+  padding-left: 100px;
+}
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icons img {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.faq-container {
+  margin-bottom: 10px;
+}
+
+.faq {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.faq:hover {
+  color: #2bffbc;
+}
+
+address {
+ font-style: normal;
+ color: #FFF;
+ font-size: 22px;
+}
+
+.vic-email {
+  cursor: pointer;
+}
+
+.vic-email:hover{
+  color: #2bffbc;
+}
+
+.attributions {
+  margin-top: 10px;
+  font-size: 10px;
+}
+
+.attributions a:hover {
+  color: #2bffbc;
 }

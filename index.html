@@ -115,6 +115,33 @@
         <div class="donation_container">
           <div class="donation_form">
             <em>Support VisionsInColor</em>
+
+            <div class="donationFrequency">
+              <input type="button" value="Once" id="onceFreq">
+
+              <input type="button" value="Monthly" id="monthlyFreq">
+              
+              <input type="button" value="Annually" id="anuallyFreq">
+            </div>
+
+            <div class="donationAmounts">
+              <input type="button" id="amount5" value="$5">
+
+              <input type="button" id="amount10" value="$10">
+              <input type="button" id="amount15" value="$15">
+              <input type="button" id="amount25" value="$25">
+              <input type="button" id="amount50" value="$50">
+              <input type="button" id="amount100" value="$100">
+              <input type="button" id="amount250" value="$250">
+              <input type="number" name="customerAmount" id="customerAmount" placeholder="Other">
+              <button onclick="">+ Add Message</button>
+              <div>
+                <textarea id="message-input" name="message-input" cols="40" rows="4" placeholder="Type your message here..."></textarea>
+              </div>
+            </div>
+            <div class="donate-btn-container">
+              <input type="button" value="Donate">
+            </div>
           </div>
         </div>
         <div class="donation_text">
@@ -125,4 +152,58 @@
       </section>
     </main>
   </body>
+  
+  <footer>
+    <div class="newsletter-container">
+      <h3>
+        Subscribe to our monthly newsletter
+      </h3>
+      <form action="#" class="newsletter-form">
+        <input type="text" name="fname" class="fname" placeholder="First Name" required>
+        <label for="fname"></label>
+
+        <input type="text" name="lname" class="lname" placeholder="Last Name" required>
+        <label for="lname"></label>
+
+        <input type="email" name="email" class="email" placeholder="Email" required>
+        <label for="email"></label>
+
+        <input type="button" value="Subscribe" class="newsletter-btn">
+      </form>
+    </div>
+    <div class="followus-container">
+      <h3>
+        Follow Us On Social Media
+      </h3>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/">
+          <img src="assets/instagram-modified.png" alt="instagram icon">
+        </a>
+        <a href="https://www.facebook.com/">
+          <img src="assets/facebook-modified.png" alt="facebook icon">
+        </a>
+        <a href="https://www.tiktok.com/">
+          <img src="assets/tiktok-modified.png" alt="tiktok icon"> 
+        </a>
+        </div>
+      <div class="contacat-and-faq">
+        <div class="faq-container">
+          <a href="#" class="faq">FAQ</a>
+        </div>
+        <address>
+          123 Fakeaddress, Paterson, NJ <br>
+          123-4567 <br>
+          <a href="#" class="vic-email">
+           info@visionsincolor.com
+          </a>
+        </address>
+      </div>
+      <div class="attributions">
+        <a href="https://www.flaticon.com/free-icons/instagram-logo" title="instagram logo icons">Instagram logo icons created by riajulislam - Flaticon</a><br>
+        <a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by riajulislam - Flaticon</a><br>
+        <a href="https://www.flaticon.com/free-icons/tiktok" title="tiktok icons">Tiktok icons created by Freepik - Flaticon</a>
+      </div> 
+    </div>
+  </footer>
+
 </html>
