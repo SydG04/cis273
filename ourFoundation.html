@@ -1,40 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="scripts.js"></script>
-    <title>VisionsInColor</title>
-  </head> 
-  <body>
-    <nav class="navbar">
-      <div class="logo">
-        <p>Visions in Color Foundation</p>
-        <!--<video src="assets/Animated logo(white)_2.mp4" autoplay loop></video> <!--I need to fix this. I didn't have time to fix it.-->
-        <!--Make this an animated image somehow and mak eit a link-->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="scripts.js"></script>
+  <title>VisionsInColor</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+          <p>Visions in Color Foundation</p>
+      </a>
+      <!--<video src="assets/Animated logo(white)_2.mp4" autoplay loop></video> <!--I need to fix this. I didn't have time to fix it.-->
+      <!--Make this an animated image somehow and mak eit a link-->
+    </div>
+    <ul id="navlist">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="ourFoundation.html">Our Foundation</a>
+      </li>
+      <li>
+        <a href="calendar.html">Calendar</a>
+      </li>
+      <li>
+        <a href="news.html">News</a>
+      </li>
+      <li>
+        <a href="contactus.html">Contact Us</a>
+      </li>
+      <li>
+        <a href="index.html#donation">
+          <button class="donate-btn">Donate</button>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <section class="our-foundation-bg">
+    <div class="ourTeam-container">
+      <img src="assets/ourTeam.png" alt="A picture of our team">
+    </div> <!--Try to see if I can add outlines to the images to make it pop-->
+    <section class="our-foundation-heading">
+      <h1>Our Foundation</h1>
+    </section>
+  </section>
+
+  <main class="main-content">
+
+    <section id="our-origin-story">
+      <h2 class="centered-heading">Our Origin Story</h2>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Mi bibendum neque egestas congue quisque egestas diam. Faucibus
+          interdum posuere lorem ipsum dolor sit. Adipiscing vitae proin
+          sagittis nisl rhoncus mattis rhoncus urna. Suspendisse ultrices
+          gravida dictum fusce ut placerat. Habitasse platea dictumst vestibulum
+          rhoncus est pellentesque. Non odio euismod lacinia at quis risus
+          sed vulputate. Urna nunc id cursus metus aliquam eleifend mi in
+          nulla. Pretium fusce id velit ut tortor pretium viverra suspendisse
+          potenti. In massa tempor nec feugiat nisl pretium fusce. Amet
+          nisl purus in mollis nunc sed id. Eget mauris pharetra et
+          ultrices neque ornare aenean euismod.
+        </p>
       </div>
-      <ul id="navlist">
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="ourFoundation.html">Our Foundation</a>
-        </li>
-        <li>
-          <a href="calendar.html">Calendar</a>
-        </li>
-        <li>
-          <a href="news.html">News</a>
-        </li>
-        <li>
-          <a href="contactus.html">Contact Us</a>
-        </li>
-        <li>
-          <a href="#">
-            <button class="donate-btn">Donate</button>
-          </a>
-        </li>
-      </ul>
-    </nav>
+      <div class="of-imagecontainers">
+        <img src="https://dummyimage.com/400x400.gif" alt="image placeholder" class="of-images" />
+        <figcaption>
+          Lorem ipsum dolor sit.
+        </figcaption>
+      </div>
+    </section>
+
+    <section id="our-mission">
+      <h2 class="centered-heading">Our Mission</h2>
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Mi bibendum neque egestas congue quisque egestas diam. Faucibus interdum posuere lorem ipsum
+          dolor sit. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna. Suspendisse ultrices gravida
+          dictum fusce ut placerat.</p>
+      </div>
+      <div class="of-imagecontainers">
+        <img src="http://fakeimg.pl/400x400" alt="image placeholder" class="of-images" />
+        <figcaption>
+          Lorem ipsum dolor sit
+        </figcaption>
+      </div>
+      <div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum
+            varius duis at consectetur lorem donec. Facilisi nullam vehicula
+            ipsum a arcu cursus vitae.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="our-goals">
+      <h2 class="centered-heading">Our Goals</h2>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Consectetur adipiscing elit pellentesque habitant. Libero volutpat sed cras ornare arcu dui.
+          Facilisis magna etiam tempor orci eu lobortis. Libero justo laoreet sit amet cursus sit. Faucibus pulvinar
+          elementum integer enim neque volutpat ac tincidunt:
+        <ul id="goals-list">
+          <li>Local Accesibility</li>
+          <li>Diveristy workshops</li>
+          <li>Partnerships</li>
+          <li>Scholarships</li>
+          <li>Special Events</li>
+        </ul>
+        </p>
+        <p>
+          Iaculis nunc sed augue lacus viverra vitae congue eu consequat ac felis donec et odio pellentesque diam
+          volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate
+        </p>
+      </div>
+      <div class="of-imagecontainers">
+        <img src="https://dummyimage.com/400x400.png" alt="image placeholder" class="of-images" />
+        <figcaption>
+          Our donation goal
+        </figcaption>
+      </div>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Nec nam aliquam sem et.
+        </p>
+      </div>
+    </section>
+  </main>
 </html>
+
+<!--I may add some lines to the background of the main section. Just to add some color-->

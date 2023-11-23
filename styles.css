@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 
+/*Home page*/
 html {
   scroll-behavior: smooth;
 }
@@ -31,7 +32,7 @@ h2 {
   margin: 15px 0px;
 }
 
-p {
+p, figcaption {
   color: #fffff2;
   font-family: Roboto, Lato, sans-serif;
 }
@@ -51,6 +52,7 @@ p {
 .logo {
   display: inline-block;
   padding: 10px 20px;
+  cursor: pointer;
 }
 
 /*.logo video {
@@ -109,12 +111,12 @@ a:hover {
   cursor: pointer;
 }
 
-.hp {
+.hp, .our-foundation-bg {
   position: relative;
   height: 100vh;
 }
 
-.video_wrapper {
+.video_wrapper, .ourTeam-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -123,13 +125,13 @@ a:hover {
   overflow: hidden;
 }
 
-.hp-background {
+.hp-background, .our-foundation-bg img  {
   width: 100%;
   height: 100%;
   object-fit: cover; /* This ensures the video covers the container */
 }
 
-.heroline_text {
+.heroline_text, .our-foundation-heading {
   width: inherit;
   height: inherit;
   display: flex;
@@ -153,9 +155,12 @@ a:hover {
   margin: 15px 15px;
 }
 
-.who-we-are {
+#who-we-are, 
+#why-the-arts {
+  margin-top: 5px;
   display: flex;
   height: 100vh;
+  align-items: center;
 }
 
 /*
@@ -170,18 +175,26 @@ a:hover {
 .divider-style-left-top {
   
 } */
-
-.leftalign-text {
-  font-size: 25px;
-}
-
-.wwa-text {
-  float: left;
+.la-text {
   margin-left: 15px;
+  float: left;
+  text-align: left;
   width: 50%;
+  font-size: 20px;
+  line-height: 1.30;
 }
 
-.wwa-imagecontainer {
+.ra-text {
+  margin-right: 15px;
+  float: right;
+  text-align: right;
+  width: 50%;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+
+.ra-imagecontainer, .la-imgcontainer {
   display: flex;
   width: 50%;
   /* padding: 10px 100px; */
@@ -190,45 +203,16 @@ a:hover {
   align-items: center;
 }
 
-.wwa-img {
+.ra-imagecontainer img {
   float: right;
   width: 70%;
   height: 70%;
 }
 
-.who-we-are,
-.why-the-arts {
-  margin-top: 5px;
-}
-
-.why-the-arts {
-  display: flex;
-  height: 100vh;
-}
-
-.wta-text {
-  float: right;
-  width: 50%;
-  text-align: right;
-}
-
-.rightaligned-text {
-  font-size: 25px;
-}
-
-.wta-img {
+.la-imgcontainer img {
   float: left;
   width: 70%;
   height: 70%;
-}
-
-.wta-imagecontainer {
-  display: flex;
-  width: 50%;
-  /* padding: 10px 100px; */
-  /* margin: 5px 5px; */
-  justify-content: center;
-  align-items: center;
 }
 
 strong, em {
@@ -327,5 +311,55 @@ strong, em {
 
 
 .donation_text strong {
-  
+  color: #a53860;
+}
+
+
+
+
+
+
+
+/*Our Foundation page*/
+
+.our-foundation-heading h1 {
+  color: #61c9a8 ;
+}
+
+#our-origin-story, 
+#our-mission,
+#our-goals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centered-heading {
+  text-align: center;
+}
+
+#our-origin-story p, 
+#our-mission p,
+#our-goals p {
+  font-size: 20px;
+  line-height: 1.5;
+  text-indent: 20px;
+}
+
+.of-imagecontainers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.of-images {
+  width: 70%;
+}
+
+#goals-list {
+  color: #fffff2;
+  font-size: 20px;
+  line-height: 1.5;
+  list-style-type: " ★ ";
 }
