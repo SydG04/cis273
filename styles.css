@@ -36,12 +36,16 @@ h3 {
   font-size: 25px;
 }
 
-h3, p, figcaption {
+h3,
+p,
+figcaption,
+li {
   color: #fffff2;
   font-family: Roboto, Lato, sans-serif;
 }
 
 input {
+  font-family: Roboto, Lato, sans-serif;
   font-size: 15px;
 }
 
@@ -56,7 +60,7 @@ input::placeholder {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.0); /* Transparent background */
+  background-color: rgba(0, 0, 0, 0); /* Transparent background */
   display: flex;
   justify-content: space-between; /* Logo to the left, links to the right */
   align-items: center;
@@ -82,7 +86,6 @@ input::placeholder {
   font-size: 25px;
 }
 
-
 #navlist {
   list-style: none;
   margin: 0;
@@ -94,7 +97,6 @@ input::placeholder {
   margin-left: 15px; /* Add space between the links */
   color: white;
   padding: 10px 10px;
-  font-family: Roboto, Lato, sans-serif;
   font-size: large;
 }
 
@@ -125,14 +127,14 @@ a:hover {
   cursor: pointer;
 }
 
-.hp, 
+.hp,
 .our-foundation-bg {
   position: relative;
   height: 100vh;
 }
 
 .video_wrapper,
- .ourTeam-container {
+.ourTeam-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -141,13 +143,14 @@ a:hover {
   overflow: hidden;
 }
 
-.hp-background, .our-foundation-bg img  {
+.hp-background,
+.our-foundation-bg img {
   width: 100%;
   height: 100%;
   object-fit: cover; /* This ensures the video covers the container */
 }
 
-.heroline_text, 
+.heroline_text,
 .our-foundation-heading {
   width: inherit;
   height: inherit;
@@ -172,7 +175,7 @@ a:hover {
   margin: 15px 15px;
 }
 
-#who-we-are, 
+#who-we-are,
 #why-the-arts {
   margin-top: 5px;
   display: flex;
@@ -198,7 +201,7 @@ a:hover {
   text-align: left;
   width: 50%;
   font-size: 20px;
-  line-height: 1.30;
+  line-height: 1.3;
 }
 
 .ra-text {
@@ -210,8 +213,7 @@ a:hover {
   line-height: 1.5;
 }
 
-
-.ra-imagecontainer, 
+.ra-imagecontainer,
 .la-imgcontainer {
   display: flex;
   width: 50%;
@@ -233,7 +235,8 @@ a:hover {
   height: 70%;
 }
 
-strong, em {
+strong,
+em {
   font-size: 30px;
   font-weight: bold;
 }
@@ -246,17 +249,17 @@ strong, em {
 
 .separator::before,
 .separator::after {
-  content: '';
+  content: "";
   flex: 1;
   border-bottom: 1px solid white;
 }
 
 .separator:not(:empty)::before {
-  margin-right: .25em;
+  margin-right: 0.25em;
 }
 
 .separator:not(:empty)::after {
-  margin-left: .25em;
+  margin-left: 0.25em;
 }
 
 .how-you-can-help p {
@@ -279,8 +282,8 @@ strong, em {
 */
 
 #donation {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .donation_container {
@@ -290,7 +293,7 @@ strong, em {
 }
 
 .donation_form {
-  margin: 0px 8px 0 30px;
+  /*margin: 0px 8px 0 30px;*/
   outline: 2px #61c9a8 solid;
   width: 350px;
   height: 500px;
@@ -307,6 +310,133 @@ strong, em {
   padding-top: 20px;
 }
 
+.donationFrequency {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px;
+}
+
+#onceFreq {
+  border-radius: 5px 0 0 5px;
+}
+
+#annuallyFreq {
+  border-radius: 0 5px 5px 0;
+}
+
+.donationFrequency input {
+  margin: 0;
+  border: 1px solid black; /* Keep one border property */
+  background-color: #61c9a8;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.donationFrequency input:hover {
+  cursor: pointer;
+}
+
+.donationFrequency input:focus {
+  color: #22624e;
+  background-color: #fff;
+  box-shadow: inset 0 0 0 4px #22624e;
+  transition: 0.15s;
+}
+
+.donationAmounts {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin: 0 20px;
+  border: none;
+  gap: 10px;
+  justify-content: center;
+}
+
+.donationAmounts input {
+  background-color: #61c9a8;
+  font-weight: bold;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.donationAmounts input:hover {
+  cursor: pointer;
+}
+
+.donationAmounts input:focus {
+  color: #22624e;
+  background-color: #fff;
+  box-shadow: inset 0 0 0 4px #22624e;
+  transition: 0.15s;
+}
+
+.customAmount-container {
+  display: inline-flex;
+}
+
+.currencyinput {
+  display: flex;
+  background-color: #61C9A8;
+  padding: 0px 10px;
+  align-items: center;
+  border-radius: 5px 0 0 5px;
+}
+
+#customAmount {
+  padding-left: 20px;
+  border-radius: 0 5px 5px 0;
+  background-color: #fff;
+  color: black;
+  width: 70%;
+  
+}
+
+#addMessage {
+  background-color: transparent;
+  border: none;
+  color: #61C9A8;
+  margin-bottom: 10px;
+}
+
+#addMessage:hover {
+  cursor: pointer;
+}
+
+#message-input {
+  resize: none;
+}
+
+.donate-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+#contBtn {
+  margin-top: 10px;
+  padding: 15px 30%;
+  background-color: #61C9A8;
+  color: black;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+}
+
+#contBtn:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #22624e;
+  transition: 0.3s;
+  box-shadow: inset 0 0 0 4px #22624e;
+}
+
+.or {
+  text-align: center;
+  font-size: 70px;
+  font-weight: 700;
+}
+
 .donation_text {
   float: right;
   width: 50%;
@@ -314,25 +444,17 @@ strong, em {
   margin-right: 15px;
 }
 
-
 .donation_text strong {
   color: #d48282;
 }
-
-
-
-
-
-
 
 /*Our Foundation page*/
 
 .our-foundation-heading h1 {
   color: #61c9a8;
-  
 }
 
-#our-origin-story, 
+#our-origin-story,
 #our-mission,
 #our-goals {
   display: flex;
@@ -344,7 +466,7 @@ strong, em {
   text-align: center;
 }
 
-#our-origin-story p, 
+#our-origin-story p,
 #our-mission p,
 #our-goals p {
   font-size: 20px;
@@ -370,8 +492,6 @@ strong, em {
   list-style-type: " ★ ";
 }
 
-
-
 /*Footer*/
 footer {
   display: flex;
@@ -391,14 +511,14 @@ footer {
   flex-direction: column;
 }
 
-.newsletter-form input[type=text],
-.newsletter-form input[type=email]{
+.newsletter-form input[type="text"],
+.newsletter-form input[type="email"] {
   width: 75%;
   margin-bottom: 12px;
   height: 40px;
   border-radius: 5px;
   border: 2px solid #2bffbc;
-  background: #FFF;
+  background: #fff;
 }
 
 .newsletter-btn {
@@ -447,16 +567,16 @@ footer {
 }
 
 address {
- font-style: normal;
- color: #FFF;
- font-size: 22px;
+  font-style: normal;
+  color: #fff;
+  font-size: 22px;
 }
 
 .vic-email {
   cursor: pointer;
 }
 
-.vic-email:hover{
+.vic-email:hover {
   color: #2bffbc;
 }
 
