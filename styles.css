@@ -73,18 +73,48 @@ input::placeholder {
   cursor: pointer;
 }
 
+.logo p {
+  margin-right: 20px; 
+  font-family: "Dancing Script";
+  font-size: 25px;
+  color: #ffeedb;
+}
+
+/*.animate-character {
+  background-image: linear-gradient(
+    -225deg,
+
+    #f72585 0%, 
+    #480ca8 29%,
+    #4895ef 67%, 
+    #FFEEDB 100%
+  );
+  margin-right: 20px; 
+  font-family: "Dancing Script";
+  font-size: 25px;
+  font-weight: 700;
+  background-size: 200% auto;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
 /*.logo video {
   height: 200px; 
   width: 200px;
 }
 */
 
-.logo p {
-  margin-right: 20px; /* Add space between the logo and links*/
-  font-family: "Dancing Script";
-  color: #ffeedb;
-  font-size: 25px;
-}
 
 #navlist {
   list-style: none;
@@ -296,7 +326,7 @@ em {
   /*margin: 0px 8px 0 30px;*/
   outline: 2px #61c9a8 solid;
   width: 350px;
-  height: 500px;
+  height: auto;
   border-radius: 30px;
   float: left;
 }
@@ -414,7 +444,7 @@ em {
 }
 
 #contBtn {
-  margin-top: 10px;
+  margin: 10px 0;
   padding: 15px 30%;
   background-color: #61C9A8;
   color: black;
@@ -431,7 +461,7 @@ em {
   box-shadow: inset 0 0 0 4px #22624e;
 }
 
-.or {
+.or-divider {
   text-align: center;
   font-size: 70px;
   font-weight: 700;
@@ -444,7 +474,24 @@ em {
   margin-right: 15px;
 }
 
-.donation_text strong {
+#merch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.merch_text {
+  float: left;
+  width: 50%;
+  font-size: 30px;
+  margin-right: 15px;
+}
+
+.merch_image {
+
+}
+
+.donation_text strong, .merch_text strong {
   color: #d48282;
 }
 
@@ -492,13 +539,20 @@ em {
   list-style-type: " ★ ";
 }
 
+
+/*BuyOurMerch*/
+.our-foundation-heading {
+  height: 100vh;
+}
+
+
 /*Footer*/
 footer {
   display: flex;
-  height: 300px;
+  height: auto;
   width: 100%;
   background-color: #006151;
-  padding: 20px 10px 10px;
+  padding: 20px 0;
 }
 
 .newsletter-container {
@@ -544,13 +598,31 @@ footer {
   width: auto;
   padding-left: 100px;
 }
+
 .social-icons {
   margin-bottom: 20px;
+  display: flex;
+
 }
 
-.social-icons img {
+.social-icons svg {
   margin-right: 10px;
-  cursor: pointer;
+}
+
+.facebook-icon:hover {
+  fill: #1877F2; /* Change the fill color on hover for Facebook */
+  transition: fill 0.3s ease; /* Add a smooth transition effect */
+}
+
+.instagram-icon:hover path,
+.instagram-icon:hover circle {
+  fill: #833AB4;
+  transition: fill 0.3s ease;
+}
+
+.tiktok-icon:hover {
+  fill: #EE1D52;
+  transition: fill 0.3s ease;
 }
 
 .faq-container {
@@ -588,3 +660,68 @@ address {
 .attributions a:hover {
   color: #2bffbc;
 }
+
+.showsupport h2, 
+.showsupport h3, 
+.showsupport p {
+  text-align: center;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 15px;
+	justify-items: center;
+	padding: 5px;
+	margin: 50px 0;
+}
+
+.products-grid div {
+	display: flex;
+  flex-flow: column wrap;
+	align-items: center;
+}
+
+/*For media, resize this to 500px*/
+.products-grid img {
+	width: 400px;
+	height: 400px;
+  object-fit: contain;
+}
+
+.products-grid h2 {
+  color: white;
+	margin: 10px 0;
+  font-size: 24px;
+  font-family: Roboto, Lato, sans-serif;
+}
+
+.products-grid h3 {
+  margin: 10px 0;
+}
+
+.addToCart-btn {
+  margin-top: 10px;
+  border: none;
+  color: white;
+  background-color: #a53860;
+  border-radius: 5px;
+  padding: 15px 50px;
+  font-size: large;
+  font-weight: 700;
+}
+
+.addToCart-btn:hover {
+  background-color: #61c9a8;
+  color: #1f1f1f;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .products-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+}
+
