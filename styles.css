@@ -56,15 +56,16 @@ input::placeholder {
 }
 
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0); /* Transparent background */
+  background-color: rgba(0, 0, 0, 0);
   display: flex;
-  justify-content: space-between; /* Logo to the left, links to the right */
+  justify-content: space-between;
   align-items: center;
-  z-index: 2; /* Place the navbar above the video */
+  z-index: 2;
+  transition: background-color 0.3s ease; /* Add smooth transition effect */
 }
 
 .logo {

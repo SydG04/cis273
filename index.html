@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="js/slideshowVariables.js"></script>
+    <!--There was an attempt to add a slideshow-->
     <title>VisionsInColor</title>
   </head>
   <body>
-    <nav class="navbar">
+    <nav class="navbar" id="myNavbar">
       <div class="logo">
         <a href="index.html">
           <p class="animate-character">Visions In Color Foundation</p>
@@ -38,6 +40,8 @@
         </li>
       </ul>
     </nav>
+    <script src="js/stickyNav.js"></script>
+
     <section class="hp">
       <div class="video_wrapper">
         <video class="hp-background" playsinline autoplay loop muted>
@@ -75,9 +79,10 @@
           <img
             src="assets/kidsdoingart1.jpg"
             alt="teacher sitting with kids at their class table. They are doing art."
-          />
+            id="currentImage1"/>
         </div>
       </section>
+      <script src="js/slideshow1.js"></script>
 
       <section id="why-the-arts">
         <div class="la-imgcontainer">
@@ -123,6 +128,7 @@
             </div>
 
             <div class="donationAmounts">
+              
               <input type="button" id="amount5" value="$5" />
               <input type="button" id="amount10" value="$10" />
               <input type="button" id="amount15" value="$15" />
@@ -144,7 +150,7 @@
                 <textarea
                   id="message-input"
                   name="message-input"
-                  cols="40"
+                  cols="38"
                   rows="4"
                   placeholder="Type your message here..."
                 ></textarea>
@@ -189,7 +195,7 @@
         </div>
       </section>
     </main>
-    <script src="scripts.js"></script>
+    <script src="js/showMessage.js"></script>
   
 
   <footer>
