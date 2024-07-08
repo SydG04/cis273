@@ -18,3 +18,6 @@ Visions In Color is a fictional non-profit that's based in New Jersey. This is o
 [Flatart](https://www.iconfinder.com/Flatart) (Adobe Animate, JS)
 [Pixel Bazaar](https://www.iconfinder.com/pixelbazaar) (HTML, CSS)
 [Samat Odedara](https://www.iconfinder.com/samatodedara) (MySql)
+
+## AI Acknowledgement
+The art on the merchandise were assisted by AI tools such as Adobe Firefly. 
