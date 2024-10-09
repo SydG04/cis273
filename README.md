@@ -8,12 +8,12 @@ Visions In Color is a fictional non-profit that's based in New Jersey. This is o
 ![Javascript](https://github.com/SydG04/cis170/assets/113223819/2c9a36a5-79f5-4f60-9b68-3e549a17c64d)
 
 ### Current Goals/To-Do List
-- Improving HTML
+- Improving HTML (In Progress)
 - Converting CSS to SCSS (In Progress)
-- Hosting on github pages
 
 ### Future Additions
 - Add content to other pages pages
+- Improve responsiveness
 
 ### Attributions for Images
 [Flatart](https://www.iconfinder.com/Flatart) (Adobe Animate, JS)
