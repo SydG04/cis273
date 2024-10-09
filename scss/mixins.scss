@@ -12,12 +12,16 @@
 }
 
 @mixin h2 {
-  font-size: 10rem;
+  font-size: 4.188rem;
   font-family: $heading-font;
   color: $accent;
-  text-align: center;
-  text-shadow: 1px 1px 2px black;
-  font-weight: $regular;
-  margin-bottom: 0 2px;
-  margin: 0;
+  font-weight: $thin;
+  margin: 15px 0px;
+  color: $primary;
+}
+
+@mixin p {
+  font-size: calc(15px + 0.390625vw);
+  font-family: $body-font;
+  color: $text;
 }

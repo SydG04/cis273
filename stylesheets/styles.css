@@ -27,10 +27,12 @@ h1 {
 }
 
 h2 {
-  font-size: 70px;
-  color: #b3b3f1;
+  font-size: 4.188rem;
+  font-family: "Dancing Script", cursive;
+  color: #B3B3F1;
   font-weight: 100;
   margin: 15px 0px;
+  color: #c34f7a;
 }
 
 h3 {
@@ -112,7 +114,6 @@ input::placeholder {
   margin: 0;
   padding: 10px 20px;
 }
-
 #navlist li {
   display: inline-block;
   margin-left: 15px; /* Add space between the links */
@@ -125,7 +126,6 @@ a {
   color: white;
   text-decoration: none;
 }
-
 a:hover {
   color: #61c9a8;
   cursor: pointer;
@@ -134,12 +134,11 @@ a:hover {
 .donate-btn {
   border: none;
   color: white;
-  background-color: #A53860;
+  background-color: #c34f7a;
   border-radius: 30px;
   padding: 10px 15px;
   font-size: large;
 }
-
 .donate-btn:hover {
   background-color: #61c9a8;
   color: black;
@@ -200,7 +199,6 @@ a:hover {
 #why-the-arts {
   margin-top: 5px;
   display: flex;
-  height: 100vh;
   align-items: center;
 }
 
@@ -209,16 +207,23 @@ a:hover {
   display: flex;
   align-items: center;
 }
-
-.divider-line {
+.divider-style-container:has(.divider-block-right) {
+  justify-content: flex-end;
+}
+.divider-style-container .divider-line {
   position: absolute;
   width: 100%;
 }
-
-.divider-block {
+.divider-style-container .divider-block-left {
   position: absolute;
-  height: 20px;
-  width: 25%;
+  height: 8px;
+  width: 50%;
+  background-color: white;
+}
+.divider-style-container .divider-block-right {
+  position: absolute;
+  height: 8px;
+  width: 50%;
   background-color: white;
 }
 
