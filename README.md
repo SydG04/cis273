@@ -1,5 +1,6 @@
 # Visions in Color 
-Visions In Color is a fictional non-profit that's based in New Jersey. This is one of my projects in my web graphics course. It's not responsive due to time constraints during the semester. 
+Visions In Color is a fictional non-profit that's based in New Jersey. This is one of my projects in my web graphics course. It's **NOT RESPONSIVE** due to time constraints during the semester. 
+Live Link: https://sydg04.github.io/cis273/
 
 ## What I used
 ![Adobe Animate](https://github.com/SydG04/cis273/assets/113223819/c36c1c75-9583-4a5d-949e-54f1bf41f9f2)
